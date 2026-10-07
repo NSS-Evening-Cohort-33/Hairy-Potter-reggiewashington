@@ -2,6 +2,7 @@
 import { makePottery } from "./PotteryWheel.js"
 import { firePottery } from "./Kiln.js"
 import { toSellOrNotToSell } from "./PotteryCatalog.js"
+import { PotteryList } from "./PotteryList.js"
 
 
 
@@ -47,5 +48,5 @@ console.log(sellStatue)
 
 
 // Invoke the component function that renders the HTML list
-
-
+const potteryListContainer = document.querySelector(".potteryList")
+potteryListContainer.innerHTML = PotteryList()
